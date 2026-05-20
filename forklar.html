@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Informasjon om Datasikkerhet</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:black;
+    color:white;
+    line-height:1.6;
+}
+
+/* HEADER */
+
+header{
+    background:#0b0b0b;
+    padding:25px;
+    border-bottom:4px solid #22c55e;
+    text-align:center;
+}
+
+header h1{
+    color:#22c55e;
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+/* NAVIGATION */
+
+nav{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    padding:10px 15px;
+    border:2px solid transparent;
+    transition:0.3s;
+}
+
+nav a:hover{
+    border:2px solid #22c55e;
+    border-radius:8px;
+    color:#22c55e;
+}
+
+/* MAIN LAYOUT */
+
+.main-container{
+    width:90%;
+    max-width:1200px;
+    margin:40px auto;
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:30px;
+}
+
+/* CONTENT */
+
+.content{
+    background:#111111;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(34,197,94,0.3);
+}
+
+.content h2{
+    color:#22c55e;
+    margin-bottom:15px;
+}
+
+.content p{
+    margin-bottom:15px;
+    font-size:17px;
+}
+
+.content ul{
+    margin-top:20px;
+    padding-left:20px;
+}
+
+.content li{
+    margin-bottom:15px;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+    background:#111111;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(34,197,94,0.3);
+    text-align:center;
+}
+
+.sidebar h3{
+    color:#22c55e;
+    margin-bottom:20px;
+}
+
+.sidebar img{
+    width:100%;
+    border-radius:12px;
+    border:3px solid #22c55e;
+}
+
+/* BUTTON */
+
+button{
+    margin-top:20px;
+    padding:12px 20px;
+    background:#22c55e;
+    border:none;
+    border-radius:8px;
+    color:black;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:white;
+    color:black;
+}
+
+/* FOOTER */
+
+footer{
+    margin-top:50px;
+    background:#0b0b0b;
+    padding:25px;
+    text-align:center;
+    border-top:4px solid #22c55e;
+}
+
+footer p{
+    color:#cccccc;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+    .main-container{
+        grid-template-columns:1fr;
+    }
+
+    header h1{
+        font-size:30px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Informasjon om Datasikkerhet</h1>
+
+    <nav>
+        <a href="Indek.html">Hjem</a>
+        <a href="forklar.html">Informasjon</a>
+        <a href="eks.html">Phishing</a>
+        <a href="quiz.html">Quiz</a>
+    </nav>
+</header>
+
+<div class="main-container">
+
+    <!-- CONTENT -->
+    <div class="content">
+
+        <h2>Hva betyr datasikkerhet?</h2>
+
+        <p>
+            Datasikkerhet handler om å beskytte datamaskiner,
+            mobiltelefoner og informasjon mot hacking,
+            virus og svindel på nettet.
+        </p>
+
+        <h2>Hvorfor er datasikkerhet viktig?</h2>
+
+        <p>
+            Mange bruker internett hver dag til skole,
+            arbeid og sosiale medier. Hvis man ikke er forsiktig,
+            kan uvedkommende stjele passord eller personlig informasjon.
+        </p>
+
+        <h2>Hvordan beskytte seg?</h2>
+
+        <ul>
+            <li>Bruk sterke passord med bokstaver, tall og symboler.</li>
+            <li>Aktiver to-faktorautentisering på kontoene dine.</li>
+            <li>Ikke trykk på mistenkelige lenker eller meldinger.</li>
+            <li>Hold mobilen og datamaskinen oppdatert.</li>
+            <li>Installer antivirusprogram for ekstra beskyttelse.</li>
+        </ul>
+
+        <!-- BUTTON -->
+        <button onclick="showMore()">Les mer om sikkerhet</button>
+
+        <!-- EXTRA INFORMATION -->
+        <div id="moreText" style="
+            display:none;
+            margin-top:25px;
+            padding:20px;
+            background:#0b0b0b;
+            border-left:4px solid #22c55e;
+            border-radius:10px;
+        ">
+
+            <h2 style="color:#22c55e; margin-bottom:15px;">
+                Mer informasjon om datasikkerhet
+            </h2>
+
+            <p>
+                Datasikkerhet er viktig fordi mye av livet vårt skjer på nettet.
+                Vi bruker internett til skole, arbeid, shopping og sosiale medier.
+            </p>
+
+            <p>
+                Hvis informasjon kommer i feil hender, kan personer miste passord,
+                bilder eller viktige filer. Derfor er det viktig å være forsiktig
+                når man bruker internett.
+            </p>
+
+            <p>
+                Ved å bruke sterke passord, oppdatere programmer og være kritisk
+                til ukjente meldinger kan man beskytte seg mot mange typer svindel.
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- SIDEBAR -->
+
+    <div class="sidebar">
+
+        <h3>Tips for trygg bruk</h3>
+
+        <img 
+            src="https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1200&auto=format&fit=crop"
+            alt="Datasikkerhet"
+        >
+
+        <p style="margin-top:15px;">
+            Husk å alltid tenke før du klikker på lenker eller laster ned filer.
+        </p>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>
+        Iva – 1IMC –  |
+        Tema: Datasikkerhet |
+        Beskytt deg på nettet
+    </p>
+</footer>
+
+<script>
+function showMore() {
+
+    let text = document.getElementById("moreText");
+
+    if(text.style.display === "none"){
+        text.style.display = "block";
+    }
+
+    else{
+        text.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
